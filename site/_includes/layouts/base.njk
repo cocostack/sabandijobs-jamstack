@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <style>{% include "css/styles.css" %}</style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="/">Sabandijobs version Jamstack</a>
+      </div>
+    </header>
+    <div class="container">
+      {{ content | safe }}
+    </div>
+    <footer>
+      <div class="container">
+        Creado por <a href="https://www.danielprimo.io">delineas</a> basado en <a href="https://sabandijers.club">Sabandijers</a> para mostrar la potencia del Jamstack<br/>Basado en la plantilla de <a href="https://twitter.com/philhawksworth">Phil</a> y generado con <a href="https://11ty.io">Eleventy</a> en <a href="https://www.netlify.com">Netlify</a>.
+      </div>
+    </footer>
+  </body>
+</html>

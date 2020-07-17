@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: telegram.posts
+  size: 1
+  alias: item
+permalink: posts/{{ item.path }}/index.html
+---
+
+<h2>{{ item.title }}</h2>
+<div class="post-content">
+  {{ item.description | striptag | replace("🤑 NUEVO SABANDIJOB 👇🏻", "") | replace("👀 Ver Sabandijob", "") | nl2br | safe  }}
+  <a href="/apuntar" class="myButton">Quiero apuntarme a esta oferta</a>
+</div>
+

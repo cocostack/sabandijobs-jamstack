@@ -1,0 +1,18 @@
+---
+title: "Apúntate a esta oferta"
+layout: layouts/base.njk
+---
+
+<h1>Tú próxima oportunidad de trabajo te espera</h1>
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Nombre completo</label>
+    <input type="text" name="name" id="full-name" placeholder="Nombre completo" required="">
+    <label for="email-address">Correo electrónico</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="Correo electrónico" required="">
+    <label for="message">Mensaje</label>
+    <textarea rows="5" name="message" id="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+  </fieldset>
+  <input type="submit" value="Enviar solicitud">
+</form>

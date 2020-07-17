@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+title: Sabandijobs version Jamstack
+---
+
+<h1>Sabandijobs version Jamstack</h1>
+
+<hr/>
+
+<ul class="listing">
+{% for item in telegram.posts %}
+  <li>
+    <h3><a href="/posts/{{ item.path }}">{{ item.title }}</a></h3>
+    <p class="meta">Publicado en {{ item.pubDate }}</p>
+  </li>
+ {% endfor %}
+</ul>
